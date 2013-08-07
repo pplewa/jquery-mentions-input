@@ -1,15 +1,12 @@
-/*global define,document,ConnectServices*/
+/*global define,document*/
 
 /*
  * Simple autocompeter (bundled with Mentions Input)
  * Version 1.0
  * Written by: Kenneth Auchenberg (Podio)
- * Dojo version
+ * Dojo version by: Piotr Plewa (pplewa)
  *
  * License: MIT License - http://www.opensource.org/licenses/mit-license.php
- *
- * A module representing Simple Auto Completer. Refer to it using {@link SimpleAutoCompleter}
- * @module widgets/SimpleAutoCompleter
  */
 define([
 	'dojo/_base/declare',
@@ -43,7 +40,8 @@ define([
 	var defaultTemplates = {
 		wrapper: new dtl.Template('<div class="simple-autocompleter"></div>'),
 		list: new dtl.Template('<ul class="hidden"></ul>'),
-		item: new dtl.Template('<li class="item" data-id="{{ id }}"> <div class="image-block"> {% if itemIcon %} <div class="img space-right icon"> {{ itemIcon }} </div> {% endif %}  <div class="bd"> <div class="info">{{ value }} </div> </div> </div> </li>'),
+		item: new dtl.Template('<li class="item" data-id="{{ id }}"> <div class="image-block"> <div class="img space-right icon"> {{ itemIcon }} </div> <div class="bd"> <div class="info">{{ value }} </div> </div> </div> </li>'),
+		// item: new dtl.Template('<li class="item" data-id="{{ id }}"> <div class="image-block"> {% if itemIcon %} <div class="img space-right icon"> {{ itemIcon }} </div> {% endif %}  <div class="bd"> <div class="info">{{ value }} </div> </div> </div> </li>'),
 		image: new dtl.Template('<img src="{{ url }}" />'),
 		icon: new dtl.Template('<div class="{{ icon }}"></div>')
 	};

@@ -8,7 +8,6 @@
  *
  * Copyright (c) 2013 - Citrix Systems, Inc.
  * License: MIT License - http://www.opensource.org/licenses/mit-license.php
- *
  */
 define([
 	'dojo/_base/declare',
